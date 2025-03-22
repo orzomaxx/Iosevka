@@ -1,0 +1,29 @@
+[buildPlans.IosevkaOrzo]
+family = "Iosevka Orzo"
+spacing = "fixed"
+serifs = "sans"
+noCvSs = false
+exportGlyphNames = true
+
+  [buildPlans.IosevkaOrzo.variants]
+  inherits = "ss14"
+
+    [buildPlans.IosevkaOrzo.variants.design]
+    zero = "slashed"
+    capital-q = "curly-tailed"
+    capital-w = "straight-serifless"
+    f = "flat-hook-serifless"
+    g = "single-storey-serifless"
+    i = "serifed-asymmetric"
+    j = "serifed"
+    k = "straight-serifless"
+    t = "bent-hook-short-neck"
+    u = "toothed-serifless"
+    w = "straight-serifless"
+    paren = "normal"
+    brace = "straight"
+    question = "smooth"
+    lig-ltgteq = "flat"
+    lig-equal-chain = "with-notch"
+    lig-hyphen-chain = "with-notch"
+    lig-plus-chain = "with-notch"
