@@ -1,0 +1,42 @@
+name: IosevkaOrzo Build
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    name: Build ${{ matrix.fontName }} font
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        fontName: ["IosevkaOrzoNL", "IosevkaOrzo"]
+
+    steps:
+      # Checkout repository into `iosevka` sub directory
+      - uses: actions/checkout@v4
+        with:
+          path: iosevka
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Install ttfautohint
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends ttfautohint
+
+      - name: Build Font ${{ matrix.fontName }}
+        shell: bash
+        working-directory: iosevka
+        run: |
+          npm install
+          npm run build -- ttf::${{ matrix.fontName }}
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.fontName }}
+          path: iosevka/dist/
