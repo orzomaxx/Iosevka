@@ -248,7 +248,7 @@ glyph-block Symbol-Math-Relation-Addons : begin
 glyph-block Symbol-Math-Relation-Colons : begin
 	glyph-block-import CommonShapes
 	glyph-block-import Common-Derivatives
-	glyph-block-import Symbol-Arrow : ArrowShape
+	glyph-block-import Symbol-Arrow-Shared : ArrowShape
 	glyph-block-import Symbol-Math-Relation-Equal : EqualShape
 
 	define ColonEqSbSquash 0.5
@@ -646,6 +646,8 @@ glyph-block Symbol-Math-Relation-Inequality : begin
 	create-glyph 'greatergreater' 0x226B : glyph-proc
 		include : GreaterShape (SymbolMid + dH) (SymbolMid - dH) (SB - lessEqDist / 2) (RightSB - lessEqDist * 2) lesslessSW
 		include : GreaterShape (SymbolMid + dH) (SymbolMid - dH) (SB + lessEqDist * 2) (RightSB + lessEqDist / 2) lesslessSW
+
+	alias 'zNotationSchemaPiping' 0x2A20 'greatergreater'
 
 	create-glyph 'muchLess' 0x22D8 : glyph-proc
 		local df : include : DivFrame para.advanceScaleMM 3
