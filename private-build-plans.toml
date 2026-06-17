@@ -77,11 +77,11 @@ slopes.inherits   = "buildPlans.IosevkaOrzoNL"
 
 [buildPlans.IosevkaOrzo.ligations]
   inherits = "default-calt"
-  enables = [
-    "html-comment",       # <!--
-    "markdown-checkboxes" # - [ ] and - [x]
-  ]
-  disables = [
+  # enables = [
+  #   "html-comment",       # <!--
+  #   "markdown-checkboxes" # - [ ] and - [x]
+  # ]
+  disables = [ # eqeqeq
     "center-ops",                      # Vertically align some of the operators (like *) to the center position it is before or after a "center" operator (like +)
     "center-op-trigger-plus-minus-l",  # Plus (+) and Minus (-) will trigger other operator characters at left to be centered
     "center-op-trigger-plus-minus-r",  # Plus (+) and Minus (-) will trigger other operator characters at right to be centered
