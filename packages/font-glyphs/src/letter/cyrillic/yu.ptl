@@ -14,7 +14,7 @@ glyph-block Letter-Cyrillic-Yu : begin
 	define SLAB-BULGARIAN  3
 
 	define [CyrYuShape df slabType top oTop ada adb] : glyph-proc
-		local sw : Math.min df.mvs : AdviceStroke 2 (0.75 * df.adws)
+		local sw : df.adviceThinnerStroke 2 0.75
 		local gap : 0.375 * (df.rightSB - df.leftSB) - [HSwToV : 0.25 * sw] + sw / 16
 		local subDf : DivFrame [Math.min ((df.width - gap) / Width) (0.75 * df.adws)] 2
 
@@ -48,7 +48,7 @@ glyph-block Letter-Cyrillic-Yu : begin
 	define SLAB-OUTWARD    2
 
 	define [CyrRevYuShape df slabType top oTop ada adb fTailed] : glyph-proc
-		local sw : Math.min df.mvs : AdviceStroke 2 (0.75 * df.adws)
+		local sw : df.adviceThinnerStroke 2 0.75
 		local gap : 0.375 * (df.rightSB - df.leftSB) - [HSwToV : 0.25 * sw] + sw / 16
 		local subDf : DivFrame [Math.min ((df.width - gap) / Width) (0.75 * df.adws)] 2
 
@@ -68,14 +68,14 @@ glyph-block Letter-Cyrillic-Yu : begin
 		tailed    true
 
 	foreach { suffix fTailed } [Object.entries YuRevConfig] : do
-		if [not fTailed] : create-glyph "cyrl/YuRev.\(suffix)" : glyph-proc
+		if [not fTailed] : create-glyph "cyrl/revYu.\(suffix)" : glyph-proc
 			local df : include : DivFrame para.advanceScaleM 3
 			include : df.markSet.capital
 			include : CyrRevYuShape df SLAB-ALL CAP CAP ArchDepthA ArchDepthB fTailed
-		create-glyph "cyrl/yuRev.\(suffix)" : glyph-proc
+		create-glyph "cyrl/revyu.\(suffix)" : glyph-proc
 			local df : include : DivFrame para.advanceScaleM 3
 			include : df.markSet.e
 			include : CyrRevYuShape df SLAB-LOWER XH XH SmallArchDepthA SmallArchDepthB fTailed
 
-	select-variant 'cyrl/YuRev' 0xA654
-	select-variant 'cyrl/yuRev' 0xA655
+	select-variant 'cyrl/revYu' 0xA654
+	select-variant 'cyrl/revyu' 0xA655

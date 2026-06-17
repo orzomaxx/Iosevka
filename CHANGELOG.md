@@ -1,5 +1,188 @@
 ## Modifications since last major version
 
+### 34.6.3
+
+* Add Characters:
+  - SYMBOL FOR SUBSTITUTE FORM TWO (`U+2426`) (#3221).
+
+
+### 34.6.2
+
+* Add Characters:
+  - LATIN SMALL LETTER R WITH CROSSED-TAIL (`U+AB49`).
+* Refine shape of the following characters:
+  - LATIN LETTER REVERSED ESH LOOP (`U+01AA`).
+  - LATIN CAPITAL LETTER OU (`U+0222`).
+  - LATIN SMALL LETTER OU (`U+0223`).
+  - LATIN SMALL LETTER L WITH CURL (`U+0234`).
+  - LATIN SMALL LETTER R WITH FISHHOOK (`U+027E`).
+  - LATIN SMALL LETTER J WITH CROSSED-TAIL (`U+029D`).
+  - COMBINING ASTERISK BELOW (`U+0359`).
+  - GREEK SMALL LETTER XI (`U+03BE`) (#3110).
+  - CYRILLIC CAPITAL LETTER LJE (`U+0409`).
+  - CYRILLIC CAPITAL LETTER DE (`U+0414`).
+  - CYRILLIC CAPITAL LETTER EL (`U+041B`).
+  - CYRILLIC SMALL LETTER DE (`U+0434`).
+  - CYRILLIC SMALL LETTER EL (`U+043B`).
+  - CYRILLIC SMALL LETTER LJE (`U+0459`).
+  - CYRILLIC CAPITAL LETTER EL WITH TAIL (`U+04C5`).
+  - CYRILLIC SMALL LETTER EL WITH TAIL (`U+04C6`).
+  - CYRILLIC CAPITAL LETTER KOMI LJE (`U+0508`).
+  - CYRILLIC SMALL LETTER KOMI LJE (`U+0509`).
+  - CYRILLIC CAPITAL LETTER EL WITH HOOK (`U+0512`) ... CYRILLIC SMALL LETTER LHA (`U+0515`).
+  - CYRILLIC CAPITAL LETTER EL WITH MIDDLE HOOK (`U+0520`).
+  - CYRILLIC SMALL LETTER EL WITH MIDDLE HOOK (`U+0521`).
+  - CYRILLIC CAPITAL LETTER DZZHE (`U+052A`) ... CYRILLIC SMALL LETTER EL WITH DESCENDER (`U+052F`).
+  - CYRILLIC SMALL LETTER LONG-LEGGED DE (`U+1C81`).
+  - LATIN LETTER SMALL CAPITAL OU (`U+1D15`).
+  - CYRILLIC LETTER SMALL CAPITAL EL (`U+1D2B`).
+  - LATIN SMALL LETTER R WITH FISHHOOK AND MIDDLE TILDE (`U+1D73`).
+  - MODIFIER LETTER SMALL J WITH CROSSED-TAIL (`U+1DA8`).
+  - COMBINING ASTERISK ABOVE (`U+20F0`).
+  - MERCURY (`U+263F`).
+  - COMBINING CYRILLIC LETTER DE (`U+2DE3`).
+  - COMBINING CYRILLIC LETTER EL (`U+2DE7`).
+  - CYRILLIC CAPITAL LETTER SOFT DE (`U+A662`) ... CYRILLIC SMALL LETTER SOFT EL (`U+A665`).
+  - CYRILLIC CAPITAL LETTER DWE (`U+A680`).
+  - CYRILLIC SMALL LETTER DWE (`U+A681`).
+  - CYRILLIC CAPITAL LETTER DZZE (`U+A688`).
+  - CYRILLIC SMALL LETTER DZZE (`U+A689`).
+  - LATIN SMALL LETTER R WITHOUT HANDLE (`U+AB47`).
+  - MODIFIER LETTER SMALL LETTER R WITH FISHHOOK (`U+107A9`).
+  - LATIN SMALL LETTER R WITH FISHHOOK AND PALATAL HOOK (`U+1DF16`).
+  - MODIFIER LETTER CYRILLIC SMALL DE (`U+1E034`).
+  - MODIFIER LETTER CYRILLIC SMALL EL (`U+1E03A`).
+  - MODIFIER LETTER CYRILLIC SMALL DZZE (`U+1E04A`).
+  - CYRILLIC SUBSCRIPT SMALL LETTER DE (`U+1E055`).
+  - CYRILLIC SUBSCRIPT SMALL LETTER EL (`U+1E05B`).
+* Make certain characters slightly wider under Quasi-Proportional. Affected characters:
+  - CYRILLIC CAPITAL LETTER YN (`U+A65E`).
+  - CYRILLIC SMALL LETTER YN (`U+A65F`).
+
+
+### 34.6.1
+
+* Fixes broken U+2BD1 and U+1F18A (#3195).
+* Add Characters:
+  - LATIN SMALL LETTER R WITHOUT HANDLE (`U+AB47`).
+
+
+### 34.6.0
+
+* Add `flat-top` variants for `a`/`g`/`m`/`n`/`p`/`q`/`r`/`α`/`η`/`а`/`р` (#1269) (#2519).
+* Add `flat-bottom` variants for `G`/`U`/`b`/`d`/`u`/`μ`/`µ`.
+* Refine shape of the following characters:
+  - LATIN CAPITAL LIGATURE OE (`U+0152`).
+  - LATIN LETTER SMALL CAPITAL OE (`U+0276`).
+  - MODIFIER LETTER SMALL CAPITAL OE (`U+107A3`).
+
+
+### 34.5.0
+
+* Add Characters:
+  - WHITE HEAVY CHECK MARK (`U+2705`) (#3171).
+  - NEGATIVE SQUARED CROSS MARK (`U+274E`) (#3171).
+  - LATIN SMALL LETTER TURNED O OPEN-O (`U+AB43`).
+  - LATIN SMALL LETTER TURNED O OPEN-O WITH STROKE (`U+AB44`).
+* Add `double-storey-flat-bottom` variants for Latin/Cyrillic Lower A (`a`, `а`).
+* Add `bilateral-motion-serifed` variants for Cyrillic Capital/Lower Ya (`Я`, `я`).
+* Refine shape of the following characters:
+  - LATIN SMALL LETTER AE (`U+00E6`).
+  - LATIN SMALL LIGATURE OE (`U+0153`).
+  - LATIN SMALL LETTER DB DIGRAPH (`U+0238`).
+  - LATIN SMALL LETTER QP DIGRAPH (`U+0239`).
+  - CYRILLIC SMALL LIGATURE A IE (`U+04D5`).
+  - CYRILLIC CAPITAL LETTER KOMI DJE (`U+0502`).
+  - CYRILLIC SMALL LETTER KOMI DJE (`U+0503`).
+  - LATIN SMALL LETTER TURNED AE (`U+1D02`).
+  - LATIN SMALL LETTER TURNED OE (`U+1D14`).
+  - MODIFIER LETTER SMALL TURNED AE (`U+1D46`).
+  - LATIN SMALL LETTER UE (`U+1D6B`).
+  - COMBINING LATIN SMALL LETTER FLATTENED OPEN A ABOVE (`U+1DD3`) ... COMBINING LATIN SMALL LETTER AO (`U+1DD5`).
+  - CYRILLIC CAPITAL LETTER DOUBLE MONOCULAR O (`U+A66C`).
+  - CYRILLIC SMALL LETTER DOUBLE MONOCULAR O (`U+A66D`).
+  - CYRILLIC CAPITAL LETTER DOUBLE O (`U+A698`).
+  - CYRILLIC SMALL LETTER DOUBLE O (`U+A699`).
+  - LATIN SMALL LETTER AA (`U+A733`).
+  - LATIN SMALL LETTER AO (`U+A735`).
+  - LATIN SMALL LETTER AU (`U+A737`).
+  - LATIN CAPITAL LETTER OO (`U+A74E`).
+  - LATIN SMALL LETTER OO (`U+A74F`).
+  - MODIFIER LETTER SMALL LIGATURE OE (`U+A7F9`).
+  - LATIN SMALL LETTER A REVERSED-SCHWA (`U+AB31`).
+  - LATIN SMALL LETTER INVERTED OE (`U+AB40`) ... LATIN SMALL LETTER TURNED OE WITH HORIZONTAL STROKE (`U+AB42`).
+  - LATIN SMALL LETTER UO (`U+AB63`).
+  - MODIFIER LETTER SMALL AE (`U+10783`).
+
+
+### 34.4.0
+
+* Add `above-baseline` variants for Greek Lower Chi (`χ`).
+* Add `tall` variants for Cyrillic Lower Ze (`з`).
+* Add `cursive-interrupted` and `cursive-interrupted-tall` variants for Cyrillic Lower Ve (`в`).
+  - Optimize glyphs for original `cursive` and `cursive-tall` variants.
+* Add `rounded-top` variants for Cyrillic Lower Ve (`в`).
+
+
+### 34.3.0
+
+* Add narrow bent hook variants for `f`, `j`, `r`, and `t` (#3132).
+* Add `crossbar-at-half-ascender-height` variants for `f`.
+* Add `motion-bottom-serifed` variants for `q`.
+* Add `middle-serifed-half-ascender` variants for long-s (`ſ`) and lower eszett (`ß`).
+* Add `serifed` variants for Greek Lower Gamma (`γ`).
+* Add `diagonal-tailed` variant for Greek Lower Pi (`π`).
+* Add `short-neck` and `short-neck2` variants for Greek Lower Phi (`φ`) and Psi (`ψ`).
+* Add dense variants for ellipsis (#3133).
+* Add IPA localization forms for Greek Lower Lambda (`λ`) and Psi (`ψ`).
+* Refine shape of the following characters:
+  - CYRILLIC CAPITAL LETTER DJE (`U+0402`).
+  - CYRILLIC CAPITAL LETTER TSHE (`U+040B`).
+  - CYRILLIC CAPITAL LETTER PSI (`U+0470`).
+  - CYRILLIC SMALL LETTER PSI (`U+0471`).
+  - MODIFIER LETTER RAISED INVERTED EXCLAMATION MARK (`U+A71E`).
+  - MODIFIER LETTER DENTAL CLICK (`U+107B6`).
+  - MODIFIER LETTER LATERAL CLICK (`U+107B7`).
+  - MODIFIER LETTER ALVEOLAR CLICK (`U+107B8`).
+
+
+### 34.2.1
+
+* Fix Iosevka Fixed width validation by removing U+1F8D0..U+1F8D8 from the Fixed fonts.
+
+
+### 34.2.0
+
+* Add Latin localization forms for Sámi languages.
+* Add IPA localization forms for Lower B and D with stroke (`ƀ`, `đ`).
+* Refine shape of the following characters:
+  - LATIN CAPITAL LETTER ENG (`U+014A`).
+  - LATIN CAPITAL LETTER TURNED M (`U+019C`).
+  - LATIN CAPITAL LETTER N WITH LONG RIGHT LEG (`U+0220`).
+  - LATIN CAPITAL LETTER SMALL Q WITH HOOK TAIL (`U+024A`).
+  - LATIN LETTER SMALL CAPITAL G (`U+0262`).
+  - LATIN LETTER SMALL CAPITAL G WITH HOOK (`U+029B`).
+  - LATIN SMALL LETTER LS DIGRAPH (`U+02AA`) ... LATIN SMALL LETTER LZ DIGRAPH (`U+02AB`).
+  - GREEK CAPITAL LETTER IOTA WITH TONOS (`U+038A`).
+  - COMBINING LATIN LETTER SMALL CAPITAL G (`U+1DDB`).
+  - GREEK CAPITAL LETTER IOTA WITH PSILI (`U+1F38`) ... GREEK CAPITAL LETTER IOTA WITH DASIA AND PERISPOMENI (`U+1F3F`).
+  - GREEK CAPITAL LETTER IOTA WITH VARIA (`U+1FDA`) ... GREEK CAPITAL LETTER IOTA WITH OXIA (`U+1FDB`).
+  - SCRIPT SMALL L (`U+2113`).
+  - TELEPHONE SIGN (`U+2121`) (#3080).
+  - FACSIMILE SIGN (`U+213B`) (#3080).
+  - LATIN CAPITAL LETTER ALPHA (`U+2C6D`).
+  - LATIN CAPITAL LETTER TURNED ALPHA (`U+2C70`).
+  - LATIN CAPITAL LETTER INSULAR R (`U+A782`).
+  - LATIN CAPITAL LETTER SCRIPT G (`U+A7AC`).
+  - LATIN CAPITAL LETTER GLOTTAL I (`U+A7BC`).
+  - LATIN SMALL LETTER M WITH CROSSED-TAIL (`U+AB3A`).
+  - MODIFIER LETTER SMALL CAPITAL G (`U+10792`).
+  - MODIFIER LETTER SMALL CAPITAL G WITH HOOK (`U+10794`).
+  - MODIFIER LETTER SMALL LS DIGRAPH (`U+10799`) ... MODIFIER LETTER SMALL LZ DIGRAPH (`U+1079A`).
+  - MATHEMATICAL DOUBLE-STRUCK CAPITAL G (`U+1D53E`).
+  - LATIN LETTER SMALL CAPITAL TURNED G (`U+1DF02`).
+
+
 ### 34.1.0
 
 * Add IPA localization forms for letters with caron (e.g. {`ď`, `Ľ`, `ľ`, `ť`} → {`d͏̌`, `L͏̌`, `l͏̌`, `t͏̌`}).
