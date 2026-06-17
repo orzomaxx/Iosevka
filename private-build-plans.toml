@@ -1,4 +1,4 @@
-[buildPlans.IosevkaOrzoNL]
+[buildPlans.IosevkaOrzoNl]
 family = "Iosevka Orzo NL"
 spacing = "fontconfig-mono"
 serifs = "sans"
@@ -7,17 +7,17 @@ exportGlyphNames = true
 buildTextureFeature = true
 noLigation = true
 
-  [buildPlans.IosevkaOrzoNL.variants]
-  inherits = "ss14" # "JetBrains Mono"
+  [buildPlans.IosevkaOrzoNl.variants]
+  inherits = "ss14"
 
-    [buildPlans.IosevkaOrzoNL.variants.design]
-    apl-form = "enable"
+    [buildPlans.IosevkaOrzoNl.variants.design]
+    apl-form = "enable" # custom
 
-    zero = "slashed"
+    zero = "tall-slashed"
     capital-k = "straight-serifless"
     capital-q = "curly-tailed"
     capital-w = "straight-serifless"
-    f = "flat-hook-serifless"
+    f = "flat-hook-serifless" # default now
     g = "single-storey-serifless"
     i = "serifed-asymmetric"
     j = "serifed"
@@ -32,6 +32,7 @@ noLigation = true
     lower-lambda = "tailed-turn"
     lower-nu = "casual"
     lower-upsilon = "casual-serifed"
+    lower-chi = "semi-chancery-straight-above-baseline-serifless"
     cyrl-capital-ka = "straight-serifless"
     cyrl-ka = "straight-serifless"
     paren = "normal"
@@ -42,19 +43,18 @@ noLigation = true
     lig-hyphen-chain = "without-notch"
     lig-plus-chain = "without-notch"
 
-[buildPlans.IosevkaOrzoNL.widths.Normal]
-shape = 564
+[buildPlans.IosevkaOrzoNl.widths.Normal]
+shape = 564 # custom
 menu = 5
 css = "normal"
 
-
-[buildPlans.IosevkaOrzoNL.slopes.Upright]
+[buildPlans.IosevkaOrzoNl.slopes.Upright]
 angle = 0
 shape = "upright"
 menu = "upright"
 css = "normal"
 
-[buildPlans.IosevkaOrzoNL.slopes.Italic]
+[buildPlans.IosevkaOrzoNl.slopes.Italic]
 angle = 9.4
 shape = "italic"
 menu = "italic"
@@ -77,20 +77,39 @@ slopes.inherits   = "buildPlans.IosevkaOrzoNL"
 
 [buildPlans.IosevkaOrzo.ligations]
   inherits = "default-calt"
+  enables = [
+    "html-comment",       # <!--
+    "markdown-checkboxes" # - [ ] and - [x]
+  ]
   disables = [
-    "center-ops", # Vertically align some of the operators (like *) to the center position it is before or after a "center" operator (like +).
-    "center-op-trigger-plus-minus-l", # Plus (+) and Minus (-) will trigger other operator characters at left to be centered.
-    "center-op-trigger-plus-minus-r", # Plus (+) and Minus (-) will trigger other operator characters at right to be centered.
-    "center-op-trigger-equal-l", # Equal (=) will trigger other operator characters at left to be centered.
-    "center-op-trigger-equal-r", # Equal (=) will trigger other operator characters at right to be centered.
-    "center-op-trigger-bar-l", # Bars (|) will trigger other operator characters at left to be centered.
-    "center-op-trigger-bar-r", # Bars (|) will trigger other operator characters at right to be centered.
-    "center-op-trigger-angle-inside", # Less (<) and Greater (>) will trigger other operator characters at inside to be centered.
-    "center-op-trigger-angle-outside", # Less (<) and Greater (>) will trigger other operator characters at outside to be centered.
-    "center-op-influence-dot", # Treat dot (.) as operator and perform chained centering.
-    "center-op-influence-colon", # Treat colon (:) as operator and perform chained centering.
+    "center-ops",                      # Vertically align some of the operators (like *) to the center position it is before or after a "center" operator (like +)
+    "center-op-trigger-plus-minus-l",  # Plus (+) and Minus (-) will trigger other operator characters at left to be centered
+    "center-op-trigger-plus-minus-r",  # Plus (+) and Minus (-) will trigger other operator characters at right to be centered
+    "center-op-trigger-equal-l",       # Equal (=) will trigger other operator characters at left to be centered
+    "center-op-trigger-equal-r",       # Equal (=) will trigger other operator characters at right to be centered
+    "center-op-trigger-bar-l",         # Bars (|) will trigger other operator characters at left to be centered
+    "center-op-trigger-bar-r",         # Bars (|) will trigger other operator characters at right to be centered
+    "center-op-trigger-angle-inside",  # Less (<) and Greater (>) will trigger other operator characters at inside to be centered
+    "center-op-trigger-angle-outside", # Less (<) and Greater (>) will trigger other operator characters at outside to be centered
+    "center-op-influence-dot",         # Treat dot (.) as operator and perform chained centering
+    "center-op-influence-colon",       # Treat colon (:) as operator and perform chained centering
 
-    "trig",           # <|, |> , <||, and other bar-and-angle-bracket symbols
-    "ltgt-slash-tag", # </, /> and </>
-    "exeqeqeq"        # !=== with triple lines
+    "arrow-wave",        # ~~>, <~~ (wavy arrows)
+    "exeqeqeq",          # !=== with triple lines
+    "trig",              # <|, |>, <|| and other bar-and-angle-bracket symbols
+    "ltgt-ne",           # <> as inequality
+    "ltgt-diamond",      # <> as diamond
+    "ltgt-diamond-tab",  # <> as HTML/XML tag
+    "ltgt-slash-tag",    # </, /> and </>
+    "kern-dotty",        # ::, ::: and ... to be closer
+    "kern-bars",         # ||, ||| and // to be closer
+    "tilde-tilde",       # ~~  merges
+    "tilde-tilde-tilde", # ~~~ merges
+    "plus-plus",         # ++  merges
+    "plus-plus-plus",    # +++ merges
+    "hash-hash",         # ##  merges
+    "hash-hash-hash",    # ### merges
+    "llggeq",            # <<=, >>= (shift operator)
+
+    "colon-greater-as-colon-arrow" # :> into : and a narrow arrow
   ]
