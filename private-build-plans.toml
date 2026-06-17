@@ -99,7 +99,7 @@ slopes.inherits   = "buildPlans.IosevkaOrzoNL"
     "trig",              # <|, |>, <|| and other bar-and-angle-bracket symbols
     "ltgt-ne",           # <> as inequality
     "ltgt-diamond",      # <> as diamond
-    "ltgt-diamond-tab",  # <> as HTML/XML tag
+    "ltgt-diamond-tag",  # <> as HTML/XML tag
     "ltgt-slash-tag",    # </, /> and </>
     "kern-dotty",        # ::, ::: and ... to be closer
     "kern-bars",         # ||, ||| and // to be closer
