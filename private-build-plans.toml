@@ -7,44 +7,25 @@ exportGlyphNames = true
 buildTextureFeature = true
 noLigation = true
 
-  [buildPlans.IosevkaOrzoNL.variants]
-  inherits = "ss14"
+[buildPlans.IosevkaOrzoNL.variants.design]
+apl-form = "enable" # custom
 
-    [buildPlans.IosevkaOrzoNL.variants.design]
-    apl-form = "enable" # custom
-
-    zero = "tall-slashed"
-    capital-k = "straight-serifless"
-    capital-q = "curly-tailed"
-    capital-w = "straight-serifless"
-    f = "flat-hook-serifless" # default now
-    g = "single-storey-serifless"
-    i = "serifed-asymmetric"
-    j = "serifed"
-    k = "straight-serifless"
-    t = "bent-hook-short-neck"
-    u = "toothed-serifless"
-    w = "straight-serifless"
-    long-s = "flat-hook-tailed"
-    lower-alpha = "crossing"
-    lower-gamma = "casual"
-    lower-theta = "oval"
-    lower-lambda = "tailed-turn"
-    lower-nu = "casual"
-    lower-upsilon = "casual-serifed"
-    lower-chi = "semi-chancery-straight-above-baseline-serifless"
-    cyrl-capital-ka = "straight-serifless"
-    cyrl-ka = "straight-serifless"
-    paren = "normal"
-    brace = "straight"
-    question = "smooth"
-    lig-ltgteq = "flat"
-    lig-equal-chain = "without-notch"
-    lig-hyphen-chain = "without-notch"
-    lig-plus-chain = "without-notch"
+zero = "tall-slashed"
+i = "serifed-asymmetric"
+lower-lambda = "tailed-turn"
+lower-xi = "rounded"
+lower-chi = "semi-chancery-straight-serifless"
+cyrl-em = "hanging-serifless"
+asterisk = "penta-mid"
+brace = "straight"
+guillemet = "straight"
+ampersand = "upper-open"
+percent = "rings-continuous-slash"
+lig-equal-chain = "without-notch"
+lig-hyphen-chain = "without-notch"
 
 [buildPlans.IosevkaOrzoNL.widths.Normal]
-shape = 564 # custom
+shape = 548 # semi-expanded actually
 menu = 5
 css = "normal"
 
@@ -76,12 +57,14 @@ widths.inherits   = "buildPlans.IosevkaOrzoNL"
 slopes.inherits   = "buildPlans.IosevkaOrzoNL"
 
 [buildPlans.IosevkaOrzo.ligations]
-  inherits = "default-calt"
+  inherits = "default-calt" # dlig
+
   # enables = [
   #   "html-comment",       # <!--
   #   "markdown-checkboxes" # - [ ] and - [x]
   # ]
-  disables = [ # eqeqeq
+
+  disables = [
     "center-ops",                      # Vertically align some of the operators (like *) to the center position it is before or after a "center" operator (like +)
     "center-op-trigger-plus-minus-l",  # Plus (+) and Minus (-) will trigger other operator characters at left to be centered
     "center-op-trigger-plus-minus-r",  # Plus (+) and Minus (-) will trigger other operator characters at right to be centered
@@ -95,7 +78,11 @@ slopes.inherits   = "buildPlans.IosevkaOrzoNL"
     "center-op-influence-colon",       # Treat colon (:) as operator and perform chained centering
 
     "arrow-wave",        # ~~>, <~~ (wavy arrows)
+    "eqeqeq",            # ===  with triple lines
     "exeqeqeq",          # !=== with triple lines
+    "exeqeq",            # !==  with triple lines
+    "eqexeq",            # =!=  with triple lines
+    "eqexeq-dl",         # =!=  with double lines
     "trig",              # <|, |>, <|| and other bar-and-angle-bracket symbols
     "ltgt-ne",           # <> as inequality
     "ltgt-diamond",      # <> as diamond
