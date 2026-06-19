@@ -61,20 +61,20 @@ slopes.inherits   = "buildPlans.IosevkaOrzoNL"
   # inherits = "default-calt"
 
   enables = [ # => <== ~> <~ <~>
-    "arrow-l",         # <- <--
-    "arrow-r",         # -> --> --->
-    "arrow-lr",        # <-> <-->
+  # "arrow-l",         # <- <--
+  # "arrow-r",         # -> --> ----->
+  # "arrow-lr",        # <-> <-->
   # "counter-arrow-l", # -< --<
   # "counter-arrow-r", # >- >--
     "arrow-hyphen",         # Arrows using hyphen-minus (-) as the rod.
-  # "counter-arrow-hyphen", # Counter-arrows using hyphen-minus (-) as the rod.
+    "counter-arrow-hyphen", # Counter-arrows using hyphen-minus (-) as the rod.
 
     "eqeq",   # == and ===
     "lteq",   # <= as lte
     "gteq",   # >= as gte
-  # "lteq-separate", # Display <= as separate shape.
-  # "gteq-separate", # Display >= as separate shape.
-    "exeq", # Enable ligation for != and !==.
+    "lteq-separate", # Display <= as separate shape.
+    "gteq-separate", # Display >= as separate shape.
+    "exeq",   # != and !==
 
     "slash-asterisk", # Shift asterisk in /* and */
   # "kern-dotty", # Move connecting dotty punctuations closer, like for ::, ::: and ....
@@ -84,12 +84,12 @@ slopes.inherits   = "buildPlans.IosevkaOrzoNL"
   # "tilde-tilde-tilde",                # merge ~~~
     "minus-minus",                      # merge --
     "minus-minus-minus",                # merge ---
-  # "plus-plus",                        # merge ++
-  # "plus-plus-plus",                   # merge ++
+    "plus-plus",                        # merge ++
+    "plus-plus-plus",                   # merge ++
     "underscore-underscore",            # merge __
     "underscore-underscore-underscore", # merge ___
-  # "hash-hash",                        # merge ##
-  # "hash-hash-hash",                   # merge ###
+    "hash-hash",                        # merge ##
+    "hash-hash-hash",                   # merge ###
 
     "llgg", # Enable ligation for <<, >> and other angle-bracket chaining.
   # "llggeq", # Enable ligation for <<=, >>= as shift operator.
