@@ -91,10 +91,6 @@
     "slash-asterisk", # /* and */ (shift asterisk)
     "llgg",           # <<, >> and other angle-bracket chaining
 
-    # Centering
-    "center-ops",
-	  "center-op-trigger-equal-l", # :=, *=, .=, *=* <*> <:> *=*
-
     # Connection (---, +++, __, ##)
     "minus-minus-minus",
     "plus-plus-plus",
