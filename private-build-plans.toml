@@ -2,6 +2,7 @@
   family = "Iosevka Orzo NL"
   spacing = "fontconfig-mono"
   serifs = "sans"
+
   noCvSs = true
   exportGlyphNames = true
   buildTextureFeature = true
@@ -61,6 +62,7 @@
   family = "Iosevka Orzo"
   spacing = "fontconfig-mono"
   serifs = "sans"
+
   noCvSs = true
   exportGlyphNames = true
   buildTextureFeature = true
@@ -90,7 +92,8 @@
     "llgg",           # <<, >> and other angle-bracket chaining
 
     # Centering
-	  "center-op-trigger-equal-l", # :=, *=, .= *=* <*>
+    "center-ops",
+	  "center-op-trigger-equal-l", # :=, *=, .=, *=* <*> <:> *=*
 
     # Connection (---, +++, __, ##)
     "minus-minus-minus",
