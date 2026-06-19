@@ -1,55 +1,56 @@
 [buildPlans.IosevkaOrzoNL]
-family = "Iosevka Orzo NL"
-spacing = "fontconfig-mono"
-serifs = "sans"
-noCvSs = false
-exportGlyphNames = true
-buildTextureFeature = true
-noLigation = true
+  family = "Iosevka Orzo NL"
+  spacing = "fontconfig-mono"
+  serifs = "sans"
+  noCvSs = false
+  exportGlyphNames = true
+  buildTextureFeature = true
+  noLigation = true
 
 [buildPlans.IosevkaOrzoNL.variants.design]
-apl-form = "enable" # custom
+  apl-form = "enable" # custom
 
-zero = "tall-slashed"
-i = "serifed-asymmetric"
-lower-lambda = "tailed-turn"
-lower-xi = "rounded"
-lower-chi = "semi-chancery-straight-serifless"
-cyrl-em = "hanging-serifless"
-asterisk = "penta-mid"
-brace = "straight"
-guillemet = "straight"
-ampersand = "upper-open"
-percent = "rings-continuous-slash"
-lig-equal-chain = "without-notch"
-lig-hyphen-chain = "without-notch"
+  zero = "tall-slashed"
+  i = "serifed-asymmetric"
+  lower-lambda = "tailed-turn"
+  lower-xi = "rounded"
+  lower-chi = "semi-chancery-straight-serifless"
+  cyrl-em = "hanging-serifless"
+  asterisk = "penta-mid"
+  brace = "straight"
+  guillemet = "straight"
+  ampersand = "upper-open"
+  percent = "rings-continuous-slash"
+  lig-equal-chain = "without-notch"
+  lig-hyphen-chain = "without-notch"
+
 
 [buildPlans.IosevkaOrzoNL.widths.Normal]
-shape = 548 # semi-expanded actually
-menu = 5
-css = "normal"
+  shape = 548 # from "semi-expanded"
+  menu = 5
+  css = "normal"
 
 [buildPlans.IosevkaOrzoNL.slopes.Upright]
-angle = 0
-shape = "upright"
-menu = "upright"
-css = "normal"
+  angle = 0
+  shape = "upright"
+  menu = "upright"
+  css = "normal"
 
 [buildPlans.IosevkaOrzoNL.slopes.Italic]
-angle = 9.4
-shape = "italic"
-menu = "italic"
-css = "italic"
+  angle = 9.4
+  shape = "italic"
+  menu = "italic"
+  css = "italic"
 
 
 [buildPlans.IosevkaOrzo]
-family = "Iosevka Orzo"
-spacing = "fontconfig-mono"
-serifs = "sans"
-noCvSs = false
-exportGlyphNames = true
-buildTextureFeature = true
-noLigation = false
+  family = "Iosevka Orzo"
+  spacing = "fontconfig-mono"
+  serifs = "sans"
+  noCvSs = false
+  exportGlyphNames = true
+  buildTextureFeature = true
+  noLigation = false
 
 variants.inherits = "buildPlans.IosevkaOrzoNL"
 weights.inherits  = "buildPlans.IosevkaOrzoNL"
@@ -57,46 +58,41 @@ widths.inherits   = "buildPlans.IosevkaOrzoNL"
 slopes.inherits   = "buildPlans.IosevkaOrzoNL"
 
 [buildPlans.IosevkaOrzo.ligations]
-  inherits = "default-calt"
+  # inherits = "default-calt"
 
-  # enables = [
-  #   "html-comment",       # <!--
-  #   "markdown-checkboxes" # - [ ] and - [x]
-  # ]
+  enables = [ # => <== ~> <~ <~>
+    "arrow-l",         # <- <--
+    "arrow-r",         # -> --> --->
+    "arrow-lr",        # <-> <-->
+  # "counter-arrow-l", # -< --<
+  # "counter-arrow-r", # >- >--
+    "arrow-hyphen",         # Arrows using hyphen-minus (-) as the rod.
+  # "counter-arrow-hyphen", # Counter-arrows using hyphen-minus (-) as the rod.
 
-  disables = [
-    "center-ops",                      # Vertically align some of the operators (like *) to the center position it is before or after a "center" operator (like +)
-    "center-op-trigger-plus-minus-l",  # Plus (+) and Minus (-) will trigger other operator characters at left to be centered
-    "center-op-trigger-plus-minus-r",  # Plus (+) and Minus (-) will trigger other operator characters at right to be centered
-    "center-op-trigger-equal-l",       # Equal (=) will trigger other operator characters at left to be centered
-    "center-op-trigger-equal-r",       # Equal (=) will trigger other operator characters at right to be centered
-    "center-op-trigger-bar-l",         # Bars (|) will trigger other operator characters at left to be centered
-    "center-op-trigger-bar-r",         # Bars (|) will trigger other operator characters at right to be centered
-    "center-op-trigger-angle-inside",  # Less (<) and Greater (>) will trigger other operator characters at inside to be centered
-    "center-op-trigger-angle-outside", # Less (<) and Greater (>) will trigger other operator characters at outside to be centered
-    "center-op-influence-dot",         # Treat dot (.) as operator and perform chained centering
-    "center-op-influence-colon",       # Treat colon (:) as operator and perform chained centering
+    "eqeq",   # == and ===
+    "lteq",   # <= as lte
+    "gteq",   # >= as gte
+  # "lteq-separate", # Display <= as separate shape.
+  # "gteq-separate", # Display >= as separate shape.
+    "exeq", # Enable ligation for != and !==.
 
-    "arrow-wave",        # ~~>, <~~ (wavy arrows)
-    "eqeqeq",            # ===  with triple lines
-    "exeqeqeq",          # !=== with triple lines
-    "exeqeq",            # !==  with triple lines
-    "eqexeq",            # =!=  with triple lines
-    "eqexeq-dl",         # =!=  with double lines
-    "trig",              # <|, |>, <|| and other bar-and-angle-bracket symbols
-    "ltgt-ne",           # <> as inequality
-    "ltgt-diamond",      # <> as diamond
-    "ltgt-diamond-tag",  # <> as HTML/XML tag
-    "ltgt-slash-tag",    # </, /> and </>
-    "kern-dotty",        # ::, ::: and ... to be closer
-    "kern-bars",         # ||, ||| and // to be closer
-    "tilde-tilde",       # ~~  merges
-    "tilde-tilde-tilde", # ~~~ merges
-    "plus-plus",         # ++  merges
-    "plus-plus-plus",    # +++ merges
-    "hash-hash",         # ##  merges
-    "hash-hash-hash",    # ### merges
-    "llggeq",            # <<=, >>= (shift operator)
+    "slash-asterisk", # Shift asterisk in /* and */
+  # "kern-dotty", # Move connecting dotty punctuations closer, like for ::, ::: and ....
+  # "kern-bars", # Move consecutive bars closer, like for ||, ||| and //.
 
-    "colon-greater-as-colon-arrow" # :> into : and a narrow arrow
+  # "tilde-tilde",                      # merge ~~
+  # "tilde-tilde-tilde",                # merge ~~~
+    "minus-minus",                      # merge --
+    "minus-minus-minus",                # merge ---
+  # "plus-plus",                        # merge ++
+  # "plus-plus-plus",                   # merge ++
+    "underscore-underscore",            # merge __
+    "underscore-underscore-underscore", # merge ___
+  # "hash-hash",                        # merge ##
+  # "hash-hash-hash",                   # merge ###
+
+    "llgg", # Enable ligation for <<, >> and other angle-bracket chaining.
+  # "llggeq", # Enable ligation for <<=, >>= as shift operator.
+    "html-comment", # <!--
+    "markdown-checkboxes" # - [ ] and - [x]
   ]
