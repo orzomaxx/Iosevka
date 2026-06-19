@@ -74,24 +74,23 @@
 [buildPlans.IosevkaOrzo.ligations]
   enables = [
     # Arrows
-    "arrow-hyphen",
-    "counter-arrow-hyphen",
+    "arrow-hyphen",         # <->
+    "counter-arrow-hyphen", # >-<, ->-
 
     # Comparison
     "lteq",   # <= as lte
     "gteq",   # >= as gte
     "eqeq",   # == and ===
     "exeq",   # != and !==
-    "eqeqeq", # === with triple lines
-    "exeqeq", # !== with triple lines
 
     # Distance/position arrangement
     "kern-dotty",     # ::, ::: and ...
     "kern-bars",      # ||, ||| and //
     "slash-asterisk", # /* and */ (shift asterisk)
+    "llgg",           # <<, >> and other angle-bracket chaining
 
     # Centering
-	  "center-op-trigger-equal-l", # :=, *=, .=
+	  "center-op-trigger-equal-l", # :=, *=, .= *=* <*>
 
     # Connection (---, +++, __, ##)
     "minus-minus-minus",
@@ -100,8 +99,6 @@
     "hash-hash",
 
     # Other
-    "ltgt-diamond-tag", # <>
-    "llgg", # <<, >> and other angle-bracket chaining
     "html-comment",       # <!--
-    "markdown-checkboxes" # - [ ] and - [x]
+    "markdown-checkboxes" # - [ ], - [x] and - [X]
   ]
