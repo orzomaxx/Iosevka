@@ -57,7 +57,7 @@ widths.inherits   = "buildPlans.IosevkaOrzoNL"
 slopes.inherits   = "buildPlans.IosevkaOrzoNL"
 
 [buildPlans.IosevkaOrzo.ligations]
-  inherits = "default-calt" # dlig
+  inherits = "default-calt"
 
   # enables = [
   #   "html-comment",       # <!--
